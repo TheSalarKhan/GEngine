@@ -7,6 +7,8 @@
 
 #include "Errors.h"
 
+namespace Engine {
+
 Errors::Errors() {
 	// TODO Auto-generated constructor stub
 
@@ -24,5 +26,8 @@ void Errors::fatalError(std::string errorString,SDL_Window* window)
 							 window);
 	SDL_Quit(); // Call this function from anywhere, and you will close the SDL subsystems
 	exit(0);
+
+}
+
 
 }

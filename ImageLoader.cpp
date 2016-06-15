@@ -10,6 +10,8 @@
 #include "Errors.h"
 #include "IOManager.h"
 
+
+namespace Engine {
 GLTexture ImageLoader::loadPNG(std::string filePath) {
 	GLTexture texture = {}; // initialize everything to zero
 	std::vector<unsigned char> in;
@@ -50,4 +52,5 @@ GLTexture ImageLoader::loadPNG(std::string filePath) {
 	glBindTexture(GL_TEXTURE_2D, texture.id);
 
 	return texture;
+}
 }

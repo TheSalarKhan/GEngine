@@ -9,7 +9,7 @@
 
 #include <fstream>
 
-
+namespace Engine {
 
 bool IOManager::readFileToBuffer(std::string& filePath,std::vector<unsigned char>& buffer) {
 	std::ifstream file(filePath,std::ios::binary);
@@ -38,4 +38,6 @@ bool IOManager::readFileToBuffer(std::string& filePath,std::vector<unsigned char
 	file.close();
 
 	return true;
+}
+
 }

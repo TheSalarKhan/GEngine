@@ -8,6 +8,8 @@
 #ifndef VERTEX_H_
 #define VERTEX_H_
 
+namespace Engine {
+
 /**
  * This struct will encapsulate per vertex data.
  * Considerations:
@@ -61,6 +63,8 @@ struct Vertex {
 		position.y = y;
 	}
 };
+
+}
 
 
 

@@ -11,6 +11,9 @@
 #include <vector>
 #include <string>
 
+
+
+namespace Engine {
 /**
  * This is just going to be a static class, so there is no need to instantiate it
  */
@@ -18,5 +21,8 @@ class IOManager {
 public:
 	static bool readFileToBuffer(std::string& path,std::vector<unsigned char>& buffer);
 };
+
+
+}
 
 #endif /* IOMANAGER_H_ */

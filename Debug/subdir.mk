@@ -6,31 +6,37 @@
 CPP_SRCS += \
 ../Errors.cpp \
 ../GLSLProgram.cpp \
+../GameEngineCore.cpp \
 ../IOManager.cpp \
 ../ImageLoader.cpp \
 ../ResourceManager.cpp \
 ../Sprite.cpp \
 ../TextureCache.cpp \
+../Window.cpp \
 ../picopng.cpp 
 
 OBJS += \
 ./Errors.o \
 ./GLSLProgram.o \
+./GameEngineCore.o \
 ./IOManager.o \
 ./ImageLoader.o \
 ./ResourceManager.o \
 ./Sprite.o \
 ./TextureCache.o \
+./Window.o \
 ./picopng.o 
 
 CPP_DEPS += \
 ./Errors.d \
 ./GLSLProgram.d \
+./GameEngineCore.d \
 ./IOManager.d \
 ./ImageLoader.d \
 ./ResourceManager.d \
 ./Sprite.d \
 ./TextureCache.d \
+./Window.d \
 ./picopng.d 
 
 

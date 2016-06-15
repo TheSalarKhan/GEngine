@@ -10,6 +10,8 @@
 
 #include "TextureCache.h"
 #include <string>
+
+namespace Engine {
 /**
  * A static class to manage resources like textures etc. It Implements simple caching
  */
@@ -21,5 +23,7 @@ private:
 	// and once in the .cpp file.
 	static TextureCache _textureCache;
 };
+
+}
 
 #endif /* RESOURCEMANAGER_H_ */

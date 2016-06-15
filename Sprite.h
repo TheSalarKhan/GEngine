@@ -12,6 +12,8 @@
 
 #include <string>
 
+
+namespace Engine {
 //A 2D quad that can be rendered to the screen
 class Sprite
 {
@@ -33,6 +35,6 @@ private:
 
 };
 
-
+}
 
 #endif /* SPRITE_H_ */

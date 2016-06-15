@@ -4,6 +4,8 @@
 #include <cstddef>
 #include "ResourceManager.h"
 
+
+namespace Engine {
 Sprite::Sprite() : _x(0),_y(0),_width(0),_height(0),_vboID(0)
 {
     //Always initialize your buffer IDs to 0
@@ -114,4 +116,5 @@ void Sprite::draw() {
 
     //Unbind the VBO
     glBindBuffer(GL_ARRAY_BUFFER, 0);
+}
 }

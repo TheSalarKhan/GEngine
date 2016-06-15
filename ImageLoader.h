@@ -13,10 +13,12 @@
 /**
  * This is a static class
  */
+namespace Engine {
 class ImageLoader {
 public:
 	static GLTexture loadPNG(std::string filePath);
 
 };
+}
 
 #endif /* IMAGELOADER_H_ */

@@ -8,6 +8,8 @@
 #include "TextureCache.h"
 #include "ImageLoader.h"
 
+namespace Engine {
+
 TextureCache::TextureCache() {
 	// TODO Auto-generated constructor stub
 
@@ -51,4 +53,6 @@ GLTexture TextureCache::getTexture(std::string texturePath) {
 
 	//mit is actually pointing to a pair, mit->first will give us the key and mit->second will give us the value.
 	return mit->second;
+}
+
 }

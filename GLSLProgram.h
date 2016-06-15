@@ -14,12 +14,14 @@
 #include <iostream>
 #include "Errors.h"
 
+namespace Engine {
 class GLSLProgram {
 public:
 	GLSLProgram();
 	virtual ~GLSLProgram();
 
-	void compileShaders(const std::string& vertexShaderFile,const std::string& fragmentShaderFile);
+	void compileShaders(const std::string& vertexShaderFile,
+			const std::string& fragmentShaderFile);
 	void linkShaders();
 	void addAttribute(const std::string& attributeName);
 
@@ -36,4 +38,5 @@ private:
 	void compileShader(const std::string filePath, GLuint id);
 };
 
+}
 #endif /* GLSLPROGRAM_H_ */
